@@ -13,7 +13,7 @@ const Navbar = () => {
   const [toggleDrawer, setToggleDrawer] = useState(false);
 
   return (
-    <div className="flex justify-end items-center gap-6  fixed bg-white w-[80%]">
+    <div className="flex justify-end items-center gap-6  fixed bg-white w-[78%]">
      
       <div className='items-center flex justify-center pt-3'>
         <div>
