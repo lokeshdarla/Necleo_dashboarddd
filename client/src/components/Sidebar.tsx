@@ -29,17 +29,17 @@ const Sidebar = () => {
     <div className="relative">
       {isMenuOpen && (
         <aside className='sidebar-open'>
-            <div className='flex-col bg-white items-start flex justify-between pl-8 h-[100%] z-10 min-w-[280px] py-8'>
+          <div className='flex-col bg-white items-start flex justify-between pl-8 h-[100%] z-10 min-w-[280px] py-8'>
             <div className='flex-col items-center flex justify-center'>
               <div className='items-start flex justify-start pb-4'>
-                <img className='h-8' src='logo.png' alt='Logo' />
+                <img className='h-8' src='/logo.png' alt='Logo' />
               </div>
               <hr className='border border-gray-300 text-black' />
               <div className='items-center flex justify-center border-y-2 border-gray-300 w-full gap-5'>
                 <div className='items-start flex justify-center flex-col py-5 gap-5'>
-                <NavLink
+                  <NavLink
                     to="/my-projects"
-                
+
                     className={({ isActive, isPending }) =>
                       isPending ? "pending" : isActive ? "items-center flex justify-center gap-5 text-[#FA782F] text-base font-[500]" : "items-center flex justify-center gap-5 text-[#C4C4C4] text-base font-[500]"
                     }
@@ -49,9 +49,9 @@ const Sidebar = () => {
                   </NavLink>
                   <NavLink
                     to="/sample-projects"
-                 
+
                     className={({ isActive }) =>
-isActive ? "items-center flex justify-center gap-5 text-[#FA782F] text-base font-[500]" : "items-center flex justify-center gap-5 text-[#C4C4C4] text-base font-[500]"
+                      isActive ? "items-center flex justify-center gap-5 text-[#FA782F] text-base font-[500]" : "items-center flex justify-center gap-5 text-[#C4C4C4] text-base font-[500]"
                     }
                   >
                     <RiAppsFill size={20} />
@@ -65,7 +65,7 @@ isActive ? "items-center flex justify-center gap-5 text-[#FA782F] text-base font
                     <TbAppsFilled size={20} />
                     Apps
                   </Link>
-                  <Link to="/intro-to-necleo" className='items-center flex justify-center gap-5 text-[#C4C4C4]  text-base font-[400]'>
+                  <Link to="/intro" className='items-center flex justify-center gap-5 text-[#C4C4C4]  text-base font-[400]'>
                     <FaCirclePlay size={20} />
                     Intro to Necleo
                   </Link>
@@ -94,16 +94,16 @@ isActive ? "items-center flex justify-center gap-5 text-[#FA782F] text-base font
         </aside>
       )}
       <div
-        className={`fixed top-0 left-0 z-40 w-full h-full ${
-          isMenuOpen ? "block" : "hidden"
-        } bg-black opacity-50`}
+        className={`fixed top-0 left-0 z-40 w-full h-full ${isMenuOpen ? "block" : "hidden"
+          } bg-black opacity-50`}
       />
-      <div className='fixed top-5 left-5 z-50 cursor-pointer'>
+      <div className='fixed top-5 left-5 z-50 cursor-pointer flex items-center justify-center gap-4'>
         <HiMenuAlt1
           size={30}
           color='black'
           onClick={() => setIsMenuOpen(true)}
         />
+        <img className='hidden md:block h-7' src='/logo.png' alt='Logo' />
       </div>
     </div>
   );

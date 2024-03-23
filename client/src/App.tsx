@@ -14,25 +14,25 @@ import React from 'react';
 const App = () => {
   return (
     <div className="sm:-8 px-4 min-h-screen flex flex-row ">
-  {/* Sidebar */}
-    <Sidebar />
+      {/* Sidebar */}
+      <Sidebar />
 
-  {/* Main Content */}
-  <div className="">
-    <Navbar />
+      {/* Main Content */}
+      <div className="">
+        <Navbar />
 
-    {/* Router setup for different pages */}
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/my-projects" element={<MyProjects />} />
-      <Route path="/sample-projects" element={<SampleProjects />} />
-      <Route path="/apps" element={<AppPage />} />
-      <Route path="/intro" element={<IntroPage />} />
-      <Route path="/help-support" element={<HelpSupport />} />
-      <Route path="/feedback" element={<Feedback />} />
-    </Routes>
-  </div>
-</div>
+        {/* Router setup for different pages */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/my-projects" element={<MyProjects />} />
+          <Route path="/sample-projects" element={<SampleProjects />} />
+          <Route path="/apps" element={<AppPage />} />
+          <Route path="/intro" element={<IntroPage />} />
+          <Route path="/help-support" element={<HelpSupport />} />
+          <Route path="/feedback" element={<Feedback />} />
+        </Routes>
+      </div>
+    </div>
 
   )
 }

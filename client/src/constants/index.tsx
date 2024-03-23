@@ -5,4 +5,6 @@ export interface Photo {
   height: number;
   url: string;
   download_url: string;
+  title?: string;
+  description?: string;
 }

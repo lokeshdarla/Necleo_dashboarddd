@@ -1,7 +1,10 @@
-export interface ProjectFormData {
+export interface Project {
   id: string;
-  image: string;
-  heading: string;
-  description: string;
+  author: string;
+  width: number;
+  height: number;
+  url: string;
+  download_url: string;
+  title?: string;
+  description?: string;
 }
-
