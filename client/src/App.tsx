@@ -9,6 +9,7 @@ import { IntroPage } from "./pages/IntroPage";
 import HelpSupport from "./pages/helpSupport";
 import Home from "./pages/Home";
 import Feedback from './pages/feedback';
+import React from 'react';
 
 const App = () => {
   return (

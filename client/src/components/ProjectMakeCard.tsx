@@ -40,7 +40,7 @@ const ProjectMakeCard: React.FC = () => {
   };
 
   return (
-    <div className='h-70 bg-white w-fit p-3 rounded-2xl flex flex-col items-center justify-center gap-4'>
+    <div className='h-[265px] bg-white w-fit p-3 rounded-2xl flex flex-col items-center justify-center gap-4'>
       <button onClick={openModal}>
         <div className='h-44 w-80 flex items-center justify-center bg-[#FA782F66] rounded-2xl'>
           <img className='h-12' src="icons/addicon.png" alt="" />

@@ -3,7 +3,6 @@ import { ProjectFormData } from './constants';
 const app = express();
 app.use(express.json());
 
-// Example in-memory storage for projects
 const projects: ProjectFormData[] = [
   {
     id: '1',
